@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Yesterday from '$lib/yesterday.svelte'
+  const title = 'COVID Calc'
+</script>
+
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
+
+<h1>COVID Figures</h1>
+<Yesterday />
