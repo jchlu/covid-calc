@@ -3,6 +3,10 @@
 	--secondary-color: #d0dde9;
 	--tertiary-color: #edf0f8;
 }
+fieldset {
+	display: flex;
+	flex-direction: column;
+}
 
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
