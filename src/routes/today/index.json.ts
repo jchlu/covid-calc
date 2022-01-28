@@ -8,8 +8,10 @@ export const post: RequestHandler<DailyInfo> = async (event) => {
 	});
 	console.dir(dailyInfo);
 	return {
-		status: 200,
-		body: `The request body returned ${JSON.stringify(dailyInfo)} total cases.`
+		status: 303,
+		headers: {
+			location: '/'
+		}
 	};
 };
 
