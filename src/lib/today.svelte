@@ -1,17 +1,24 @@
+<script>
+  export let data
+  console.log('This is data as seen in the today.svalte file:')
+  console.dir(data)
+  const yesterday = JSON.stringify(data)
+</script>
 <div>
   <form action="/today.json" method="post" name="dailyInfo">
+    <input type="text" hidden name="yesterday" value="{yesterday}">
     <fieldset>
     <legend>Placeholder for today's figures</legend>
-    <label for="totalCases">Total Cases</label>
-    <input type="text" name="totalCases">
-    <label for="cases">Yesterday's Cases</label>
-    <input type="text" name="cases">
-    <label for="recoveries">Yesterday's Recoveries</label>
-    <input type="text" name="recoveries">
-    <label for="positivity">Yesterday's Positivity %</label>
-    <input type="text" name="positivity">
-    <label for="deaths">Yesterday's Deaths</label>
-    <input type="text" name="deaths">
+    <label for="tests">Total Cases</label>
+    <input type="number" name="tests">
+    <label for="positives">Positives</label>
+    <input type="number" name="positives">
+    <label for="positivity">Positivity %</label>
+    <input type="number" min="0.00" max="100.00" step=".01" name="positivity">
+    <label for="recoveries">Recoveries</label>
+    <input type="number" name="recoveries">
+    <label for="deaths">Deaths</label>
+    <input type="number" name="deaths">
     <button type="submit">Submit</button>
   </fieldset>
   </form>
