@@ -1,5 +1,7 @@
 <script>
   import Yesterday from '$lib/yesterday.svelte'
+  import Today from '$lib/today.svelte';
+
   const title = 'COVID Calc'
 </script>
 <style>
@@ -15,4 +17,5 @@
 <div class="main">
 <h1>COVID Figures</h1>
 <Yesterday />
+<Today />
 </div>
