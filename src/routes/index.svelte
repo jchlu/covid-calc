@@ -33,7 +33,6 @@
 {#await getData()}
   <p>Fetching data...</p>
 {:then data}
-<Yesterday data={data}/>
 <Today data={data}/>
 {:catch error}
 <p>Something went wrong while fetching the data:</p>
