@@ -10,7 +10,7 @@
     <fieldset>
     <legend>Today</legend>
     <label for="report_number">Report Number</label>
-    <input type="number" name="report_number" placeholder="{data.report_number + 1}">
+    <input type="number" name="report_number" value="{data.report_number + 1}">
     <label for="tests">Total Cases</label>
     <input type="number" name="tests">
     <label for="positives">Positives</label>
