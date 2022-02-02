@@ -13,7 +13,6 @@
     return data
   }
 
-  import Yesterday from '$lib/yesterday.svelte'
   import Today from '$lib/today.svelte';
 
   const title = 'COVID Calc'
