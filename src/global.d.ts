@@ -6,4 +6,5 @@ interface DailyInfo {
 	recoveries: number;
 	positivity: float;
 	deaths: number;
+	report_number: number;
 }
